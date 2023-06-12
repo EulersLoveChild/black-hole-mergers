@@ -22,4 +22,4 @@ After running the code, we came to the conclusion that black holes have a very l
 
 The second code, 'Macroscopic', was used to determine if groups of black holes would be bound together. This was done by using RUnge Kutta 4 to update some variables and check if a particle at $x = R$ reaches $x = 0$ from Newton's law of gravity. A graph of the results can be seen here:
 
-![A Graph of Position (blue) and Mass (red) with respect to time.](https://imgur.com/Z5ix2IJ)
+![A Graph of Position (blue) and Mass (red) with respect to time.](https://i.imgur.com/Z5ix2IJ.png)
