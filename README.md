@@ -10,7 +10,7 @@ The first code, 'BlackHoleMergers', was used to determine if black holes merged 
 
 In essence, this is an N-Body simulation, where we start with particles equally spaced within and on a cube. However, this code has a lot of extra methods for our purposes. Some of these include:
 
-1. `torus`: this method helps maintain a 3 dimensional torus topology. Simply put, if a particle leaves our cube from one side, then this method will make sure that it moves back into the cube from the diameterically opposite side. It is important to note that the only such black holes considered by this method are boundary particles and their mirrors.
+1. `torus`: this method helps maintain a 3 dimensional torus topology. Simply put, if a particle leaves our cube from one side, then this method will make sure that it moves back into the cube from the diameterically opposite side.
 
 2. `distance`: this is a helper method for the `merge` method. This creates a 2D array with the distance between all particle pairs. Then, an array or zeros is created to check if black holes are close enough to merge. If so, a 1 is placed at the particle's index of this new array. 
 
@@ -20,6 +20,6 @@ The rest of the code is just initializing various parameters like position and v
 
 After running the code, we came to the conclusion that black holes have a very low chance of merging in this setting. More information about our results and the code can be found in our paper.
 
-The second code, 'Macroscopic', was used to determine if groups of black holes would be bound together. This was done by using RUnge Kutta 4 to update some variables and check if a particle at $x = R$ reaches $x = 0$ from Newton's law of gravity. A graph of the results can be seen here:
+The second code, 'Macroscopic', was used to determine if groups of black holes would be bound together. This was done by using Runge Kutta 4 to update some variables and check if a particle at $x = R$ reaches $x = 0$ from Newton's law of gravity. A graph of the results can be seen here:
 
 ![A Graph of Position (blue) and Mass (red) with respect to time.](https://i.imgur.com/Z5ix2IJ.png)
